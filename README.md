@@ -1,4 +1,4 @@
-# Whaddo? 💜
+# Whaddo?
 
 **Whaddo?** is an activity discovery app designed to help people answer a simple question: *What should I do right now?*
 
