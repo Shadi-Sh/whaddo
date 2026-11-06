@@ -28,9 +28,33 @@ The initial MVP will focus on a curated activity catalog and deterministic recom
 
 ## Project Status
 
-**Phase: Requirements Engineering & UX Design**
+**Phase: Frontend initialization, Requirements Engineering & UX Design**
 
-This project is currently in the planning and design stage. The MVP has not yet been implemented.
+The React + TypeScript + Vite frontend includes an Activity Setup form for choosing Hobby or Chore and entering available time. Valid submissions display a summary; recommendations have not yet been implemented.
+
+## Local Development
+
+Use Node.js 20 or 22+ and npm. A maintained Node.js LTS release is recommended.
+The scaffold uses Vite 6 for compatibility with the initial development environment (Node.js 20.2).
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite (usually http://localhost:5173).
+
+Available commands:
+
+- `npm run dev` — start the development server with React Fast Refresh.
+- `npm run type-check` — check TypeScript without generating files.
+- `npm test` — run the automated form interaction tests with Vitest and jsdom.
+- `npm run build` — type-check and create a production build in `dist/`.
+- `npm run preview` — serve the production build locally after building.
+
+The app starts in `src/main.tsx`, renders the Activity Setup form in `src/App.tsx`, and uses
+`src/styles.css` for shared styles. `vite.config.ts` configures the React plugin;
+`tsconfig.json` enables strict checks for the app and Vite configuration.
 
 ## Documentation
 
